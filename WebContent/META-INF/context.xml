@@ -1,0 +1,16 @@
+<Context docBase="2018_2A02_ItJobs"
+    path="/2018_2A02_ItJobs"
+    reloadable="true">
+
+  <Resource name="jdbc/ItJobs"
+    auth="Container"
+    type="javax.sql.DataSource"
+    driverClassName="com.mysql.jdbc.Driver"
+    loginTimeout="10"
+    maxWait="-1"                    
+    username="root"                     
+    password=""                   
+    testOnBorrow="true"             
+    url="jdbc:mysql://localhost:3306/ITJobs?autoReconnect=true" />
+
+</Context>

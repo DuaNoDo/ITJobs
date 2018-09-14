@@ -1,0 +1,90 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+pageEncoding="utf-8"%>
+<div id="stylized" class="myform" style=" margin-top:00px">
+		<form id="form" name="form" method="post" action="IT_company_find_pro.jsp">
+			
+			<p>회사회원 아이디 찾기</p>
+			
+			<label>Name
+				<span class="small">이름 입력</span>
+			</label>
+			<input type="text" name="IT_C_name" id="name"/>
+			
+			
+			<div class="spacer"></div>
+			<span>
+			<label>Email
+				<span class="small">이메일주소</span>
+			</label>
+			<input type="text" name="IT_C_mail1" id="email" class="email"/><span class="moreInput">@</span>
+			<input type="text" name="IT_C_mail2" id="email2" class="email2"/>
+			<select id="email1" name="IT_C_mail2" class="moreInput">
+				<option selected>직접입력</option>
+				<option value="naver.com">naver.com</option>
+				<option value="gmail.com">gmail.com</option>
+				<option value="hanmail.net">hanmail.net</option>
+				<option value="nate.com">nate.com</option>
+			</select>
+			
+			</span>
+			<label>Phone
+			<span class="small">전화번호</span>
+			</label>
+			<input type="text" name="IT_C_phone1" id="phone2" style="width:100px"/>
+			<span class="moreInput">-</span>
+			<input type="text" name="IT_C_phone2" id="phone2" style="width:100px"/>
+			<span class="moreInput">-</span>
+			<input type="text" name="IT_C_phone3" id="phone3" style="width:100px"/>
+		
+			
+			<div class="spacer"></div>
+			<button type="submit" onclick="companyIdFind();">Sign-up</button>
+			<div class="spacer"></div>
+		
+		</form>
+		<form id="form" name="form" method="post" action="IT_company_findpw_pro.jsp">
+			
+			<p>회사회원 비밀번호 찾기</p>
+			<label>ID
+				<span class="small">아이디</span>
+			</label>
+			<input type="text" name="IT_C_id" id="id"/>
+			<div class="spacer"></div>
+			<label>Name
+				<span class="small">이름 입력</span>
+			</label>
+			<input type="text" name="IT_C_name" id="name"/>
+			
+			
+			<div class="spacer"></div>
+			<span>
+			<label>Email
+				<span class="small">이메일주소</span>
+			</label>
+			<input type="text" name="IT_C_mail1" id="email" class="email"/><span class="moreInput">@</span>
+			<input type="text" name="IT_C_mail2" id="email2" class="email2"/>
+			<select id="email1" name="IT_C_mail2" class="moreInput">
+				<option selected>직접입력</option>
+				<option value="naver.com">naver.com</option>
+				<option value="gmail.com">gmail.com</option>
+				<option value="hanmail.net">hanmail.net</option>
+				<option value="nate.com">nate.com</option>
+			</select>
+			
+			</span>
+			<label>Phone
+			<span class="small">전화번호</span>
+			</label>
+			<input type="text" name="IT_C_phone1" id="phone2" style="width:100px"/>
+			<span class="moreInput">-</span>
+			<input type="text" name="IT_C_phone2" id="phone2" style="width:100px"/>
+			<span class="moreInput">-</span>
+			<input type="text" name="IT_C_phone3" id="phone3" style="width:100px"/>
+		
+			
+			<div class="spacer"></div>
+			<button type="submit" onclick="companyIdFind();">Sign-up</button>
+			<div class="spacer"></div>
+		
+		</form>
+</div>

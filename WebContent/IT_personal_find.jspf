@@ -1,0 +1,81 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<div id="stylized" class="myform" style="margin-top: 00px">
+	<form id="form" name="form" method="post"
+		action="IT_personal_find_pro.jsp">
+
+		<label>Name <span class="small">이름 입력</span>
+		</label> <input type="text" name="IT_name" id="name" />
+
+
+		<div class="spacer"></div>
+		<span> <label>Email <span class="small">이메일주소</span>
+		</label> <input type="text" name="IT_mail1" id="email" class="email" /><span
+			class="moreInput">@</span> <input type="text" name="IT_mail2"
+			id="email2" class="email2" /> <select id="email1" name="IT_mail2"
+			class="moreInput">
+				<option selected>직접입력</option>
+				<option value="naver.com">naver.com</option>
+				<option value="gmail.com">gmail.com</option>
+				<option value="hanmail.net">hanmail.net</option>
+				<option value="nate.com">nate.com</option>
+		</select>
+
+		</span>
+
+		<div class="spacer"></div>
+		<button type="button" onclick="personalIdFind()">확인</button>
+		<div class="spacer"></div>
+
+	</form>
+	<form id="form" name="form" method="post"
+		action="IT_personal_findpw_pro.jsp">
+
+		<label>ID <span class="small">아이디</span>
+		</label> <input type="text" name="IT_id" id="id" />
+		<div class="spacer"></div>
+		<label>Name <span class="small">이름 입력</span>
+		</label> <input type="text" name="IT_name" id="name" />
+
+
+		<div class="spacer"></div>
+		<span> <label>Email <span class="small">이메일주소</span>
+		</label> <input type="text" name="IT_mail1" id="email" class="email" /><span
+			class="moreInput">@</span> <input type="text" name="IT_mail2"
+			id="email2" class="email2" /> <select id="email1" name="IT_mail2"
+			class="moreInput">
+				<option selected>직접입력</option>
+				<option value="naver.com">naver.com</option>
+				<option value="gmail.com">gmail.com</option>
+				<option value="hanmail.net">hanmail.net</option>
+				<option value="nate.com">nate.com</option>
+		</select>
+
+		</span>
+
+		<div class="spacer"></div>
+		<button type="button" onclick="personalPwFind()">확인</button>
+		<div class="spacer"></div>
+
+	</form>
+
+</div>
+<script language="javascript">
+	function personalIdFind() {
+		var name = document.getElementsByName('IT_name')[0].value;
+		var mail1 = document.getElementsByName('IT_mail1')[0].value;
+		var mail2 = document.getElementsByName('IT_mail2')[0].value;
+		var url = "./IT_personal_findId_pro.jsp?IT_name=" + name + "&IT_mail1="
+				+ mail1 + "&IT_mail2=" + mail2;
+		window.open(url, "id 찾기", "width=400, height=300, left=100, top=50");
+	}
+	function personalPwFind() {
+		var id = document.getElementsByName('IT_id')[0].value;
+		var name = document.getElementsByName('IT_name')[0].value;
+		var mail1 = document.getElementsByName('IT_mail1')[0].value;
+		var mail2 = document.getElementsByName('IT_mail2')[0].value;
+		var url = "./IT_personal_findPw_pro.jsp?IT_id=" + id + "IT_name="
+				+ name + "&IT_mail1=" + mail1 + "&IT_mail2=" + mail2;
+		window.open(url, "pw 찾기", "width=400, height=300, left=100, top=50");
+	}
+</script>

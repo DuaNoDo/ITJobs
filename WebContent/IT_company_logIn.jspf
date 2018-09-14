@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+pageEncoding="utf-8"%>
+
+<link rel="stylesheet" href="./assets/css/login.css">
+
+<form method="post" action="IT_company_logIn_pro.jsp" class="IT_loginFormBox">
+	<ul class="container">
+		<div>
+			<li><input type="text" name="IT_id" id="id" class="login_input"/></li>
+			<br> <br>
+			<li><input type="password" name="IT_pass" id="password" class="login_input" /></li>
+			<li><a href="IT_mem_find.jsp" id="idPw">ID/PW찾기</a></li>
+		</div>
+	</ul>
+	
+	<button type="submit" id="button" class="IT_btn">login</button>
+	<hr id="hr">
+	<p>
+		지금 ITJOBS에 가입해서 <br>구직자 취업맞춤 서비스를 만나보세요!
+	</p>
+	<a href="IT_join.jsp">회원가입</a>
+	<br><br><br>
+</form>

@@ -1,0 +1,104 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+pageEncoding="utf-8"%>
+
+<div id="join_form">
+	<div id="stylized" class="myform" style=" margin-top:00px">
+		<form id="form" name="form" method="post" action="IT_join_personal_pro.jsp">
+			
+			<p style="font-size:25px;font-weight:bold;">개인회원</p>
+			
+			<label style="margin-top:0px;">Name
+				<span class="small" style="margin:0px;">이름 입력</span>
+			</label>
+			<input type="text" name="IT_name" id="name" style="width:150px;margin:0px;margin-left:10px;"/>
+			<div class="spacer"></div>
+		
+			<label>ID
+				<span class="small">아이디</span>
+			</label>
+			<input type="text" name="IT_id" id="id" style="width:150px;margin:0px;margin-left:10px;"/>
+			<input type="button" id ="IT_id_modify_check" value="중복체크"  onclick="showPopup()" class="IT_btn" style="width:100px;margin:0px;margin-left:10px;">
+
+			<div class="spacer"></div>
+			<label>Password
+				<span class="small" style="margin:0px;">패스워드 6자 이상</span>
+			</label>
+			<input type="password" name="IT_pass" id="password" style="width:150px;margin:0px;margin-left:10px;"/>
+			<div class="spacer"></div>
+			
+			<label>Password Check
+				<span class="small" style="margin:0px;">비밀번호 재입력</span>
+			</label>
+			<input type="password" name="password" id="password" style="width:150px;margin:0px;margin-left:10px;"/>
+			<div class="spacer"></div>
+			
+			<label>Email
+				<span class="small" style="margin:0px;">이메일주소</span>
+			</label>
+			<input type="text" name="IT_mail1" id="email" class="email" style="width:150px;margin:0px;margin-left:10px;"/><span class="moreInput">@</span>
+			<input type="text" name="IT_mail2" id="email2" class="email2" style="width:150px;margin:0px;margin-left:10px;"/>
+			<select id="email1" name="IT_mail2" class="moreInput" style="margin:0px;margin-left:10px;">
+				<option selected>직접입력</option>
+				<option value="naver.com">naver.com</option>
+				<option value="gmail.com">gmail.com</option>
+				<option value="hanmail.net">hanmail.net</option>
+				<option value="nate.com">nate.com</option>
+			</select>
+			
+			<div class="spacer"></div>
+		
+			<label>Gender
+			<span class="small" style="margin:0px;">성별</span>
+			</label>
+			<input type="radio" name="IT_gender" id="gender" value="M" checked="checked" style="margin:0px;"/>남성
+			<input type="radio" name="IT_gender" id="gender" value="F" style="margin:0px;"/>여성
+	
+			<div class="spacer"></div>
+			
+			<label>Phone
+			<span class="small" style="margin:0px;">전화번호</span>
+			</label>
+			<select id="email1" name="IT_phone1" class="moreInput">
+				<option value="010" selected>010</option>
+				<option value="011">011</option>
+				<option value="016">016</option>
+				<option value="017">017</option>
+				<option value="019">019</option>
+			</select>
+			<span class="moreInput">-</span>
+			<input type="text" name="IT_phone2" id="phone2" style="width:100px"/>
+			<span class="moreInput">-</span>
+			<input type="text" name="IT_phone3" id="phone3" style="width:100px"/>
+			
+			<div class="spacer"></div>
+		
+			<label>Address
+			<span class="small">주소</span>
+			</label>
+			
+			<input type="text" id="sample6_postcode" name="IT_zip" placeholder="우편번호" style="width:150px;margin:0px;margin-left:10px;">
+			<input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" style="width:100px;margin:0px;margin-left:10px;" class="IT_btn"><br>
+			
+			<div class="spacer"></div>
+			
+			<label style="visibility:hidden;">00000
+			<span class="small" style="visibility:hidden;">0000</span>
+			</label>
+			
+			<table width="400">
+			<tr>
+				<td style="width:100px">
+					<input type="text" id="sample6_address" name="IT_addr1" placeholder="주소" style="width:150px;margin:0px;">
+				</td>
+				<td style="width:100px">
+					<input type="text" id="sample6_address2" name="IT_addr2" placeholder="상세주소" style="width:150px;margin:0px;">
+				</td>
+				<td style="width:100px">
+				<button type="submit" style="float:right;width:50px;">Sign-up</button>	
+				</td>
+			</tr>
+			</table>
+			<div class="spacer"></div>
+		</form>
+	</div>
+</div>
